@@ -32,13 +32,14 @@
       <!-- topics in -->
 
       <remap from="~tracker_cmd_in" to="control_manager/tracker_cmd" />
-      <remap from="~octomap_in" to="octomap_server/octomap_local_full" />
+      <remap from="~octomap_in" to="octomap_binary" />
       <remap from="~control_manager_diag_in" to="control_manager/diagnostics" />
       <remap from="~constraints_in" to="control_manager/current_constraints" />
 
       <!-- topics out -->
 
       <remap from="~diagnostics_out" to="~diagnostics" />
+      <remap from="~availability_out" to="~local_minima" />
 
       <!-- services in -->
 
